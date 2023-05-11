@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nani samireddy</title>
+    <link rel="stylesheet" href="aos/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;500;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+      html{
+        scroll-behavior : smooth;
+      }
+      body{
+        margin :0;
+        padding: 0;
+        font-family : 'Josefin Sans',sans serif;
+      }
+
+
+      a{
+        text-decoration: none;
+      }
+
+      @font-face {
+      font-family: 'waltographUI';
+      src: url(fonts/waltographUI.ttf);
+      }
+      .bg{
+        height : 35vw;
+        width : 100%;
+        position : absolute;
+        background-image : url(img/bg.png);
+        background-repeat : no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+              }
+
+      .pro{
+        height : 35vw;
+        width : 35vw;
+        border-style : solid;
+        border-radius : 50%;
+        position : relative;
+        margin : 25vw 0vw 0vw 5vw;
+        border-width : 1vw;
+        border-color : grey;
+      }
+      .h{
+        position : relative;
+        animation: animationIn 2s;
+      }
+      .h h1{
+        margin-left : 35vw;
+        font-family: 'Josefin Sans', sans-serif;
+        position : absolute;
+        font-size : 3.5vw;
+        top: 35vw;
+        left: 22vw;
+        transform: translate(-10vw, 5vw);
+      }
+      .h h3{
+        margin-left : 35vw;
+        font-family: 'waltographUI';
+        position : absolute;
+        font-size : 2.5vw;
+        color: white;
+        top: 5vw;
+        left: 22vw;
+        transform: translate(-10vw, 5vw);
+        background: repeating-linear-gradient(-40deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+        -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      }
+      .h p{
+        margin-left : 35vw;
+        font-family: 'Josefin Sans', sans-serif;
+        position : absolute;
+        top: 40vw;
+        left: 7vw;
+        font-size : 3vw;
+        font-weight : 100;
+        transform: translate(5vw, 5vw);
+      }
+
+
+      .About{
+        margin: 12vw 0vw 0vw 40vw;
+
+      }
+
+      .About h1{
+        font-size: 2vw;
+        line-height: 0;
+      }
+
+      .About p{
+        width: 30vw;
+        font-size: 1.8vw;
+        text-align: left;
+        letter-spacing: 0.2;
+        line-height: 1.5;
+      }
+
+
+
+
+      .sub{
+        font-weight: 400;
+      }
+
+
+      .myexperience{
+        margin : 15vw 0vw 0vw 20vw;
+      }
+
+      .Myexp{
+        font-size: 3vw;
+      }
+      ul{
+        list-style-type: square;
+        position: relative;
+        margin-left: 0vw;
+      }
+      li p{
+        width: 40vw;
+        margin-left: 1vw;
+        font-size: 1.5vw;
+        font-weight: 300;
+      }
+
+      .experience_content{
+        border-left: solid;
+        border-width: 0.4vw;
+        border-left-color: grey;
+        margin: 3vw 0vw 0vw 5vw;
+
+      }
+      dt{
+        font-size: 2vw;
+      }
+
+
+      .Projects h1{
+        font-size: 4vw;
+        margin: 10vw 0vw 0vw 40vw;
+      }
+      .cw h2{
+        color: black;
+        font-size: 2.5vw;
+        margin: 5vw 0vw 0vw 30vw;
+      }
+      .cw li{
+        width: 45vw;
+        line-height: 1.5vw;
+        font-size: 1.5vw;
+        margin: 1.5vw 5vw 0vw 30vw;
+        font-weight: 300;
+      }
+
+      .contact{
+        margin: 10vw 0vw 0vw 20vw;
+      }
+
+      .contact h1{
+        font-size: 4vw;
+      }
+
+
+      input[type=text]{
+        font-size: 1.5vw;
+
+
+        height: 4vw;
+        width: 26vw;
+        outline: none;
+        border: solid transparent;
+        border-radius: 20px;
+        box-shadow: 0.1vw 0.3vw 2vw rgba(100,100,150,0.32);
+        resize: none;
+        padding-left: 1vw;
+         }
+         input[type=email]{
+           font-size: 1.5vw;
+
+           height: 4vw;
+           width: 21vw;
+           outline: none;
+           border: solid transparent;
+           border-radius: 20px;
+           box-shadow: 0.1vw 0.3vw 2vw rgba(100,100,150,0.32);
+           resize: none;
+           padding-left: 1vw;
+            }
+            textarea  {
+              font-size: 1.5vw;
+
+                outline: none;
+                border: solid transparent;
+                border-radius: 20px;
+                box-shadow: 0.1vw 0.3vw 2vw rgba(100,100,150,0.32);
+                resize: none;
+                padding-left: 1vw;
+                padding-top: 1vw;
+                 }
+
+                 input[type=submit]{
+                   height: 4vw;
+                   width: 8vw;
+                   outline: none;
+                   background: grey;
+                   border: solid transparent;
+                   border-radius: 20px;
+                   box-shadow: 0.1vw 0.3vw 2vw rgba(100,100,150,0.32);
+                   resize: none;
+                   font-size: 1.7vw;
+                   font-family: 'Josefin Sans',sans-serif;
+                   cursor: pointer;
+                    }
+
+                    footer{
+                      width: 100%;
+                      height:auto;
+                      background-color: rgba(10, 10, 0,0.51);
+                      display: flex;
+
+
+                    }
+
+                    footer .social{
+                      margin: 2vw 0vw 0vw 10vw;
+                    }
+                    footer .social h1{
+                      font-size: 4vw;
+                      font-weight: 300;
+                      color: white;
+                    }
+
+                    footer .social .icons img{
+                      height: 3.5vw;
+                      margin: 0.5vw 0.5vw 3vw 0.5vw;
+
+                    }
+                    footer .email{
+                      margin: 0vw 0vw 0vw 5vw;
+                      display: flex;
+                      flex-direction: row;
+                    }
+
+                    footer .email1{
+                      margin: 3.5vw 0vw 0vw 5vw;
+                      display: flex;
+                      flex-direction: row;
+                    }
+
+                    footer .email img ,footer .email1 img
+                    {
+                      margin-top: 2vw;
+                      height: 2vw;
+
+                    }
+                    footer .email h2,footer .email1 h2{
+                      font-size: 2vw;
+                      margin-left: 2vw;
+                      font-family: 'Josefin Sans',sans-serif;
+                      font-weight: 300;
+                    }
+                    .con{
+                      display: flex;
+                      flex-direction: column;
+                    }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="h" data-aos="fade-up">
+
+      <div class="bg">
+        <!--bacground parallax effect-->
+      </div>
+      <h3><!--MOTO--></h3>
+      <img  class="pro" src="img/pro.png" alt="Nani samireddy">
+      <h1>Nani samireddy</h1>
+      <p>A freelancer Programer & Developer.</p>
+
+    </div>
+
+
+
+    <section class="About" data-aos="fade-up">
+      <h1>About Me</h1>
+      <p>I work to satisfy not to complete.I'm passionate about what i do.<br>
+      I'm a web & Android developer.I have done Projects that satisfies the end user with clean view and perfect working. </p>
+      <h3>some skills i have </h3>
+      <ul>
+        <li>Web developing</li><br>
+        <li>Android application development</li><br>
+        <li>Languages</li>
+          <ul><br>
+            <li class="sub">C, Java, Pyhton, HTML, CSS, Javascript, SQL.</li>
+          </ul><br>
+          <li>Data structures (throught C).</li><br>
+          <li>Tools</li><br>
+          <ul>
+            <li class="sub">adobe Photoshop , adode Xd,adobe illustrator, MS Office.</li><br>
+          </ul>
+          <li>Video Editing</li>
+
+      </ul>
+    </section>
+      <section class="p2" >
+    <div class="myexperience" data-aos="fade-up-right">
+
+      <h1 class="Myexp">My Expirence</h1>
+      <div class="experience_content">
+        <ul>
+          <li>I don't have any Job expirence till now. But waiting for one.</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div class="myexperience" data-aos="fade-down-right">
+
+      <h1 class="Myexp">Education</h1>
+      <div class="experience_content">
+        <ul>
+          <br><li>
+            <dt>Diploma in Computer Engineering.</dt>
+            <p>Currently I am persuing my Diploma in Computer Engineering at Andhra polytechnic Kakinada. <br>And Iam gonna complete it by 2021.</p>
+          </li>
+          <br><br>
+          <li>
+            <dt>Secondary Education.</dt>
+            <p>I had completed my Seconday education between 2013 - 2018 at Zilla Praja Parishad High School<br> Upparagudem in R.chandrampalem.</p><br>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+    <section class="Projects" data-aos="zoom-out-up">
+
+        <h1>My Projects</h1>
+        <div class="">
+           <div class="cw">
+            <a href="#"> <h2>1.Coding Warrior</h2> </a>
+             <li>Coding Warrior is site in which students who are new to programming or people who want to learn programming can learn many programming languages and solve some question and can do many more.And the I'm one of the two people who developed coding Warrior.
+               <a href="#">click here to know more about it</a>
+             </li>
+           </div>
+          </div>
+    </section>
+    <?php 
+   funtion senmail(){ if (isset($_POST['submit'])) {
+  
+        $name  = $_POST['Name'];
+        $email = $_POST['email'];
+        $msg   = $_POST['message'];
+        $result = "";
+          $to    = 'nanisamireddy05@gmail.com';
+        $subject = 'From Your Portifilo site';
+        $message = "Name :- ".$name."\nMessage :- ".$msg;
+        $header  = "From :- ".$email;
+  
+        if (mail($to, $subject, $message, $header)) {
+          $result = " sucessfully Done";
+        }
+        else {
+          $result = "somrthing went wrong please try again";
+        }
+          print $result;
+  
+  
+    }}
+  
+   ?>
+  <section class="contact" data-aos="zoom-in-up">
+    <h1>Conact Me</h1>
+    <form class="" action="<?php sedmail()?>" method="post">
+      <input type="text" name="Name" placeholder="Name" value="" required><br><br>
+      <input type="email" name="email" value="" placeholder="E-mail" required><br><br>
+      <textarea  placeholder="Message" rows="8" cols="60" required name="message"></textarea>
+      <br><br>
+      <input  type="submit" name="submit">
+      <br><br><br><br>
+    </form>
+  </section>
+
+
+  <footer>
+<br><br><br>
+    <div class="social">
+      <h1>Follow me </h1>
+      <div class="icons">
+        <a href="#"> <img src="img/Facebook.png" alt="Facebook"> </a>
+        <a href="#"> <img src="img/insta.png" alt="Instagram"> </a>
+        <a href="#"> <img src="img/youtube.png" alt="YouTube"> </a>
+        <a href="#"> <img src="img/pintrest.png" alt="pintrest"> </a>
+        <a href="#"> <img src="img/twitter.png" alt="twitter"> </a>
+
+      </div>
+    </div>
+    <div class="con">
+    <div class="email1">
+    <div >
+        <img src="img/mail.png" alt="">
+    </div>
+    <div >
+      <h2> nanisamireddy05@gmail.com</h2>
+  </div>
+</div><br>
+    <div class=" email">
+      <div >
+          <img src="img/call.png" alt="">
+      </div>
+        <div >
+          <h2>+919490273113</h2>
+      </div>
+    </div>
+  </div>
+  </footer>
+
+
+
+
+  <script src="aos/aos.js" charset="utf-8"></script>
+  <script>
+  AOS.init({
+    duration : 800,
+  });
+</script>
+
+  </body>
+</html>
